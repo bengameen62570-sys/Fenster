@@ -156,7 +156,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .hero-trust div{font-size:.85rem;color:var(--ink-soft);}
 .hero-trust strong{display:block;font-family:var(--font-display);font-size:1.5rem;color:var(--graphite-900);}
 
-/* Signature illustration: aluminium profile cross-section */
+/* Hero-Foto (Fassade) */
+.hero-photo{
+  position:relative;height:380px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* Signature illustration: aluminium profile cross-section (verwendet auf 404/Danke) */
 .profile-scene{
   position:relative;height:380px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);
   background:linear-gradient(180deg, var(--graphite-900), var(--graphite-700));
@@ -355,6 +361,7 @@ footer{background:var(--graphite-900);color:rgba(255,255,255,.85);padding:64px 0
 @media (max-width:960px){
   .hero-grid{grid-template-columns:1fr;}
   .profile-scene{order:-1;}
+  .hero-photo{order:-1;}
   .process-grid{grid-template-columns:repeat(2,1fr);}
   .product-grid{grid-template-columns:1fr;}
   .swatch-grid{grid-template-columns:repeat(3,1fr);}
