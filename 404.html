@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<meta charset="UTF-8">
 <!-- Google Consent Mode v2 (Standard: abgelehnt, bis Nutzer zustimmt) -->
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -19,13 +20,29 @@
   gtag('config', 'AW-17923302542');
 </script>
 
-<meta charset="UTF-8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2b2f33">
+<link rel="canonical" href="https://fensteralu.at/404.html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seite nicht gefunden | AluForm</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Узкие телефоны (320 px): шапка и длинные немецкие слова не должны растягивать страницу */
+html,body{overflow-x:hidden}
+h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
+@media(max-width:400px){
+  .header-actions{gap:8px}
+  .header-actions .btn,.header-actions a{font-size:13px;padding:8px 12px}
+  h1{font-size:26px;line-height:1.2}
+}
+@media(max-width:360px){
+  .header-actions{flex-wrap:wrap;justify-content:flex-end}
+  h1{font-size:23px}
+}
+</style>
 </head>
 <body>
 
