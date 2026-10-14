@@ -20,6 +20,17 @@
   gtag('config', 'AW-17923302542');
 </script>
 
+<!-- Conversion Google Ads — FensterAlu Anfrage.
+     Diese Seite wird nur nach einer abgesendeten Anfrage aufgerufen.
+     Schutz vor Doppelzählung: beim Neuladen der Seite wird nichts erneut gesendet. -->
+<script>
+  (function(){
+    try{ if(sessionStorage.getItem('fensteralu_conv')) return; }catch(e){}
+    gtag('event', 'conversion', {'send_to': 'AW-17923302542/LCM9CLv-ypwdEI7Jv-JC'});
+    try{ sessionStorage.setItem('fensteralu_conv','1'); }catch(e){}
+  })();
+</script>
+
 <meta name="description" content="Ihre Anfrage ist bei uns eingegangen.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#2b2f33">
