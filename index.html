@@ -77,6 +77,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
       <a href="#produkte">Fenster &amp; Türen</a>
       <a href="#farben">Farben</a>
       <a href="#technik">Technik</a>
+      <a href="#referenzen">Referenzen</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
 
@@ -320,6 +321,24 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
     </div>
   </section>
 
+
+  <!-- REFERENZEN -->
+  <section id="referenzen" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Referenzen</p>
+        <h2>Ausgeführte Arbeiten</h2>
+        <p>Aluminiumfenster, Portale und Glastrennwände — geliefert und montiert von uns.</p>
+      </div>
+      <div class="refs">
+        <a href="images/referenzen/alufenster-neubau.jpg"><img src="images/referenzen/alufenster-neubau.jpg" loading="lazy" alt="Neubau mit schwarzen Aluminiumfenstern und Flachdach"><span>Aluminiumfenster schwarz, Neubau</span></a>
+        <a href="images/referenzen/alufenster-schwarz-rohbau.jpg"><img src="images/referenzen/alufenster-schwarz-rohbau.jpg" loading="lazy" alt="Rohbau mit schwarzen Aluminiumfenstern"><span>Fenster und Festverglasungen, Rohbau</span></a>
+        <a href="images/referenzen/alufenster-neubau-2.jpg"><img src="images/referenzen/alufenster-neubau-2.jpg" loading="lazy" alt="Neubau Hanglage mit Aluminiumfenstern"><span>Einfamilienhaus in Hanglage</span></a>
+        <a href="images/referenzen/loft-glaswand-tuer.jpg"><img src="images/referenzen/loft-glaswand-tuer.jpg" loading="lazy" alt="Glastrennwand mit Tür im Loft-Stil, Aluminium anthrazit"><span>Glastrennwand mit Tür, Loft-Stil</span></a>
+      </div>
+    </div>
+  </section>
+
   <!-- KONTAKT / FORM -->
   <section id="kontakt" class="section-alt">
     <div class="container contact-wrap">
@@ -452,5 +471,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
 </a>
 
 <script src="script.js"></script>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){const lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.querySelectorAll('.refs a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();im.src=a.href;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});})();
+</script>
 </body>
 </html>
