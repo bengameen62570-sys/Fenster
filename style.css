@@ -405,3 +405,11 @@ footer{background:var(--graphite-900);color:rgba(255,255,255,.85);padding:64px 0
 .rv-ans{margin:0;padding:10px 12px;border-radius:10px;background:rgba(0,0,0,.04);font-size:13.5px}
 .rv-ans span{font-weight:700}
 @media(max-width:860px){.rv-grid{grid-template-columns:1fr}}
+
+/* компактный cookie-баннер на телефоне */
+@media (max-width:560px){
+  .cookie-banner{padding:7px 12px;gap:8px;flex-wrap:nowrap;align-items:center;}
+  .cookie-banner p{font-size:.66rem;line-height:1.25;}
+  .cookie-actions{width:auto;flex-direction:column;gap:6px;}
+  .btn-cookie{padding:5px 10px;font-size:.74rem;white-space:nowrap;}
+}
