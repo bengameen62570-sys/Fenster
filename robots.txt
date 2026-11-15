@@ -1,15 +1,6 @@
-# AluForm — fensteralu.at
 User-agent: *
 Allow: /
 
-# Suchmaschinen
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# KI-Assistenten — Inhalte dürfen zitiert werden
 User-agent: GPTBot
 Allow: /
 
@@ -25,49 +16,16 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: anthropic-ai
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Applebot
+User-agent: Bingbot
 Allow: /
 
-User-agent: Applebot-Extended
+User-agent: Googlebot
 Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: MistralAI-User
-Allow: /
-
-User-agent: DuckAssistBot
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-# Nicht indexieren
-Disallow: /danke.html
 
 Sitemap: https://fensteralu.at/sitemap.xml
